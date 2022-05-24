@@ -1,5 +1,5 @@
 // Copyright 2009 The Go Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style
+// Use of this source source is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
 package reflectlite
@@ -50,8 +50,8 @@ type Value struct {
 	// The next five bits give the Kind of the value.
 	// This repeats typ.Kind() except for method values.
 	// The remaining 23+ bits give a method number for method values.
-	// If flag.kind() != Func, code can assume that flagMethod is unset.
-	// If ifaceIndir(typ), code can assume that flagIndir is set.
+	// If flag.kind() != Func, source can assume that flagMethod is unset.
+	// If ifaceIndir(typ), source can assume that flagIndir is set.
 	flag
 
 	// A method value represents a curried method invocation
@@ -462,7 +462,7 @@ func ifaceE2I(t *rtype, src any, dst unsafe.Pointer)
 func typedmemmove(t *rtype, dst, src unsafe.Pointer)
 
 // Dummy annotation marking that the value x escapes,
-// for use in cases where the reflect code is so clever that
+// for use in cases where the reflect source is so clever that
 // the compiler cannot follow.
 func escapes(x any) {
 	if dummy.b {

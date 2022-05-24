@@ -1,5 +1,5 @@
 // Copyright 2009 The Go Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style
+// Use of this source source is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
 // Package reflectlite implements lightweight version of reflect, not using
@@ -746,7 +746,7 @@ func implements(T, V *rtype) bool {
 
 	// The same algorithm applies in both cases, but the
 	// method tables for an interface type and a concrete type
-	// are different, so the code is duplicated.
+	// are different, so the source is duplicated.
 	// In both cases the algorithm is a linear scan over the two
 	// lists - T's methods and V's methods - simultaneously.
 	// Since method tables are stored in a unique sorted order

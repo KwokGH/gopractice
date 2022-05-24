@@ -6,6 +6,7 @@
 *.dylib
 gopractice
 .idea
+testdata
 
 # Test binary, built with `go test -c`
 *.test
