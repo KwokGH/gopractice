@@ -23,4 +23,14 @@ func main() {
 			fmt.Sprintln("参数不正确")
 		}
 	}
+
+	if network == "udp" {
+		if app == "server" {
+			ServerUDP()
+		} else if app == "client" {
+			ClientUDP()
+		} else {
+			fmt.Sprintln("参数不正确")
+		}
+	}
 }
